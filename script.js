@@ -24,7 +24,7 @@ listContainer.addEventListener("click", function(e){
         saveData();
     }
     else if(e.target.tagName === "SPAN"){
-        e.target.parrentElement.remove();
+        e.target.parentElement.remove();
         saveData();
     }
 },false);
@@ -36,4 +36,5 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
     
 }
+
 showTask();
